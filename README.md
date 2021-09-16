@@ -25,15 +25,16 @@ For single payload, we need to remove nested properties at the aggregate service
 
 As the reqs stand now, interfaces designed will work, once I get more clarity on it we can think of minimizing code or write better interfaces.
 
-For Ping service, I returned success as I could not get free rest endpoint to query, but that’s not big development effort to integrate once we get free ping REST endpoint.
+For Ping service, I returned success as I could not get free REST endpoint to query, but that’s not big development effort to integrate once we get free ping REST endpoint.
 
 For nuget package, we have to select "generate nuget package option in project properties, which we can do that.
 For application insights we need to configure it.
-Docker support  could not integrated due to system limitations that can be done via Right click project->Add->docker support
+Docker support  could not integrated due to system limitations that can be done via : Right click project->Add->docker support
 
 Introduce Identity for user authentication and authorization and roles management.
 Introduce API gateway like ocelot or Azure API gateway.
-Introduce units mechanism for each microservice.
+Introduce unit testing mechanism for each Microservice.
 Introduce Health checks and better logging mechanism. Serilog recommended.
+
 
 
