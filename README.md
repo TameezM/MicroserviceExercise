@@ -3,7 +3,7 @@ anonymous microservice exercise. To test invoke swagger on https://localhost:443
 
 Start all services in one go by changing the solution properties so that all the services have started.
 For now, For some services IP is mandatory hence give IP address instead of domain name, if you want right response from services.
-Sample input json in swagger 
+Use BackEnDExc controller post method. Sample input json in swagger 
 {
   "address": "103.48.71.101",
   "services": [
