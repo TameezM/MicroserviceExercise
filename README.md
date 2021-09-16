@@ -5,7 +5,7 @@ To test invoke swagger on https://localhost:44343/Swagger
 
 Start all services in one go by changing the solution properties so that all the services have started. I have used .Net core 3.1. Hence, to run it, you should use .net core 3.1
 As it stands now, for some services IP is mandatory (RDAP) hence give IP address instead of domain name, if you want right response from services.
-To test in swagger which will be launched automatically, Use BackEnDExc controller post method. Sample input json to use in swagger 
+To test in swagger which will be launched automatically, Use BackEndExc controller post method. Sample input json to use in swagger 
 {
   "address": "103.48.71.101",
   "services": [
