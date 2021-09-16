@@ -13,5 +13,9 @@ For Ping service, I justed returned success as I could not get free rest endpoin
 effort to integrate once we get free ping REST endpoint.
 
 
+For nuget package, we have "generate nuget package option in project properties, which we can do that.
 
+For applicatin insights we need to configure it.
+
+For docker support, could not integrate it due to system limitations that can be done via Right click project->Add->docker support
 
