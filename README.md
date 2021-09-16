@@ -21,7 +21,7 @@ or
 TODO:
 
 Due to time constraints, Instead of ReverseDNS I did DNSLookup as I could not get free Reverse DNS service after spending an hour. I returned json string for this service due to time constraints. A model design demo is done for geoIP and RDAP Service. But I think in this model a interested properties should be kept as DTO Model 
-For single payload, we need to remove nested properties at the aggregate service wherever possible and trim down unwanted properties, which I could not work due to time constraints.
+For single payload, we need to remove nested properties at the aggregate service wherever possible and trim down unwanted properties, which I could not work due to time constraints and properties which we are of interest.
 
 As the reqs stand now, interfaces designed will work, once I get more clarity on it we can think of minimizing code or write better interfaces.
 
