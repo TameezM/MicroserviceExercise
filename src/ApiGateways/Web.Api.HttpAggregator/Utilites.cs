@@ -33,6 +33,10 @@ namespace Web.Api.HttpAggregator
                 if (!isValidAddres)
                     return false;
             }
+            else
+            {
+                isValidAddres = true;
+            }
             return isValidAddres;
         }
         /// <summary>
@@ -67,7 +71,7 @@ namespace Web.Api.HttpAggregator
             bool isIPAddress = false;
 
             // Set the regular expression to match IP addresses
-            string ipPattern = @"/^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$/";
+            string ipPattern = @"\b([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,}\b";
 
             // Create an instance of System.Text.RegularExpressions.Regex
             Regex regex = new Regex(ipPattern);
