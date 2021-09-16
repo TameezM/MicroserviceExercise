@@ -1,6 +1,8 @@
 # Microservice Exercise
 This a anonymous microservice exercise. 
+
 To test invoke swagger on https://localhost:44343/Swagger
+
 Start all services in one go by changing the solution properties so that all the services have started. I have used .Net core 3.1. Hence, to run it, you should use .net core 3.1
 As it stands now, for some services IP is mandatory (RDAP) hence give IP address instead of domain name, if you want right response from services.
 To test in swagger which will be launched automatically, Use BackEnDExc controller post method. Sample input json to use in swagger 
@@ -27,4 +29,10 @@ For Ping service, I returned success as I could not get free rest endpoint to qu
 For nuget package, we have to select "generate nuget package option in project properties, which we can do that.
 For application insights we need to configure it.
 Docker support  could not integrated due to system limitations that can be done via Right click project->Add->docker support
+
+Introduce Identity for user authentication and authorization and roles management.
+Introduce API gateway like ocelot or Azure API gateway.
+Introduce units mechanism for each microservice.
+Introduce Health checks and better logging mechanism. Serilog recommended.
+
 
