@@ -3,7 +3,17 @@ anonymous microservice exercise. To test invoke swagger on https://localhost:443
 
 Start all services in one go by changing the solution properties so that all the services have started.
 For now, For some services IP is mandatory hence give IP address instead of domain name, if you want right response from services.
-
+Sample input json in swagger 
+{
+  "address": "103.48.71.101",
+  "services": [
+    "GeoIP","RDAP","ReverseDNS","Ping"
+  ]
+}
+{
+  "address": "103.48.71.101",
+  "services": null
+}
 TODO:
 Due to time constraints, Instead of ReverseDNS I did DNSLookup as I could not get free reversedns service after spending an hour
 I returned json string for this service due to time constraints. A model demo is done for geoIP and RDAP Service. But I think in 
@@ -14,7 +24,7 @@ For Ping service, I justed returned success as I could not get free rest endpoin
 effort to integrate once we get free ping REST endpoint.
 
 
-For nuget package, we have "generate nuget package option in project properties, which we can do that.
+For nuget package, we have to select "generate nuget package option in project properties, which we can do that.
 
 For applicatin insights we need to configure it.
 
