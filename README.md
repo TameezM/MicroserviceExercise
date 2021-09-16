@@ -2,7 +2,7 @@
 anonymous microservice exercise. To test invoke swagger on https://localhost:44343/Swagger
 
 Start all services in one go by changing the properties if all the services have started.
-For some services IP is mandatory hence give IP address instead of domain name.
+For now, For some services IP is mandatory hence give IP address instead of domain name.
 
 TODO:
 Due to time constraints, Instead of ReverseDNS I did DNSLookup as I could not get free reversedns service after spending an hour
