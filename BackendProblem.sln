@@ -17,25 +17,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RDAP", "RDAP", "{7C2AF5D0-D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReverseDNS", "ReverseDNS", "{FD126E89-E747-4C02-98EB-192A48533199}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoIP.API", "src\Services\GeoIp\GeoIP.API\GeoIP.API.csproj", "{26A6623C-C2A2-496B-9629-155E9AA4CDA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeoIP.API", "src\Services\GeoIp\GeoIP.API\GeoIP.API.csproj", "{26A6623C-C2A2-496B-9629-155E9AA4CDA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ping.API", "src\Services\Ping\Ping.API\Ping.API.csproj", "{89386668-144D-4BFC-B034-EE05ADE07563}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ping.API", "src\Services\Ping\Ping.API\Ping.API.csproj", "{89386668-144D-4BFC-B034-EE05ADE07563}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{158CD93D-84B3-4E59-B85E-CB0F64CB3AB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RDAP.API", "src\Services\RDAP\RDAP.API\RDAP.API.csproj", "{B713B20A-AA77-4822-BE13-C2B40618E3D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RDAP.API", "src\Services\RDAP\RDAP.API\RDAP.API.csproj", "{B713B20A-AA77-4822-BE13-C2B40618E3D6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7C3E39DA-BF59-45CB-A291-4E94AEFE5FC6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{71316FFE-C8CA-41FC-8FEC-CC20F7B56C40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RevDNS.API", "src\Services\ReverseDNS\RevDNS.API\RevDNS.API.csproj", "{4EFC3B86-DA20-4699-90F6-55CF34600F72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevDNS.API", "src\Services\ReverseDNS\RevDNS.API\RevDNS.API.csproj", "{4EFC3B86-DA20-4699-90F6-55CF34600F72}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{773FAAB3-0E61-4D19-B2BA-96D290F24922}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{451E30F6-D7FF-46B9-8C27-C32D822E6B89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Api.HttpAggregator", "src\ApiGateways\Web.Api.HttpAggregator\Web.Api.HttpAggregator.csproj", "{74694302-AF3B-4AC8-8F7B-F9B4276F74B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web.Api.HttpAggregator", "src\ApiGateways\Web.Api.HttpAggregator\Web.Api.HttpAggregator.csproj", "{74694302-AF3B-4AC8-8F7B-F9B4276F74B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{984CE29B-C0BE-4031-9CE9-9D351C5EAED1}"
 EndProject
@@ -43,7 +43,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UtilsLib", "UtilsLib", "{5E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ModelsLib", "ModelsLib", "{8237416E-3313-4C6D-83FE-01F6FD20C3F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelsClassLib", "src\Common\ModelsClassLib\ModelsClassLib.csproj", "{506348A5-35E5-43AA-B1AF-D37A4B97A4D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelsClassLib", "src\Common\ModelsClassLib\ModelsClassLib.csproj", "{506348A5-35E5-43AA-B1AF-D37A4B97A4D3}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{854CC6C6-8A46-463B-A57D-E51CE32E2509}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{506348A5-35E5-43AA-B1AF-D37A4B97A4D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{506348A5-35E5-43AA-B1AF-D37A4B97A4D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{506348A5-35E5-43AA-B1AF-D37A4B97A4D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{854CC6C6-8A46-463B-A57D-E51CE32E2509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854CC6C6-8A46-463B-A57D-E51CE32E2509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854CC6C6-8A46-463B-A57D-E51CE32E2509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854CC6C6-8A46-463B-A57D-E51CE32E2509}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
