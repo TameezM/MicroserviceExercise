@@ -1,0 +1,54 @@
+version: '3.4'
+networks:
+  localdev:
+    driver: bridge
+services:
+  web.api.httpaggregator:
+    image: ${DOCKER_REGISTRY-}webapihttpaggregator
+    ports:
+      - "5001:80"
+    build:
+      context: .
+      dockerfile: src/ApiGateways/Web.Api.HttpAggregator/Dockerfile
+    networks:
+      - localdev
+
+  geoip.api:
+    image: ${DOCKER_REGISTRY-}geoipapi
+    hostname: geoip
+    build:
+      context: .
+      dockerfile: src/Services/GeoIp/GeoIP.API/Dockerfile
+    networks:
+      - localdev
+
+
+  ping.api:
+    image: ${DOCKER_REGISTRY-}pingapi
+    hostname: ping
+    build:
+      context: .
+      dockerfile: src/Services/Ping/Ping.API/Dockerfile
+    networks:
+      - localdev
+
+
+  rdap.api:
+    image: ${DOCKER_REGISTRY-}rdapapi
+    hostname: rdap
+    build:
+      context: .
+      dockerfile: src/Services/RDAP/RDAP.API/Dockerfile
+    networks:
+      - localdev
+
+
+  revdns.api:
+    image: ${DOCKER_REGISTRY-}revdnsapi
+    hostname: revdns
+    build:
+      context: .
+      dockerfile: src/Services/ReverseDNS/RevDNS.API/Dockerfile
+    networks:
+      - localdev
+
